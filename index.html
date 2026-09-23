@@ -2390,24 +2390,29 @@
         </button>
 
     </div>
- if ("serviceWorker" in navigator) {
+ 
+    <!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script> src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
         navigator.serviceWorker.register("./service-worker.js")
             .then(() => {
                 console.log("Service Worker registered successfully.");
             })
             .catch(error => {
-                console.error("Service Worker registration failed:", error);
+                console.error(
+                    "Service Worker registration failed:",
+                    error
+                );
             });
     });
 }
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
-    <script src="script.js"></script>
-    
-   
+</script>
 
 </body>
 </html>
