@@ -2390,14 +2390,7 @@
         </button>
 
     </div>
-
-
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
-    <script src="script.js"></script>
-    
-    if ("serviceWorker" in navigator) {
+ if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
         navigator.serviceWorker.register("./service-worker.js")
             .then(() => {
@@ -2408,6 +2401,13 @@
             });
     });
 }
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+    <script src="script.js"></script>
+    
+   
 
 </body>
 </html>
